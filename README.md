@@ -16,4 +16,4 @@ Está é uma landing page criada para empresa Lubtrol Com. de Lubrificantes LTDA
 ## Como ultilizar
 
 - Utilize o comando ```  npm start ``` ou ``` parcel index.html ``` para inicar o projeto no modo padrão (modo de desenvolvimento).
-- Utilize o comando ``` npm run build1 ``` (``` parcel index.html --public-url ./ --no-source-maps``` ) ou ``` npm run build2 ``` (  ``` parcel build index.html -d dist --no-source-maps ```) para iniciar o projeto no modo produção criando uma pasta chamada ``` dist ``` que estará com os arquivos corretamentes configurados para o deploy em produção.
+- Utilize o comando ``` npm run build1 ```  ou ``` npm run build2 ```  para iniciar o projeto no modo produção criando uma pasta chamada ``` dist ``` que estará com os arquivos corretamentes configurados para o deploy em produção.
