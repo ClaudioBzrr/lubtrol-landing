@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build1":"parcel index.html --public-url ./ --no-source-maps",
+    "build2":"parcel build index.html -d dist --no-source-maps"
   },
   "keywords": [],
   "author": "",
