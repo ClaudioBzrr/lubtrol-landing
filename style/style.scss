@@ -44,7 +44,7 @@ main{
     position: relative;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
 }
 
@@ -104,6 +104,46 @@ main{
     }
 }
 
+.home-presentation{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-presentation{
+    width: 90vw;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+
+}
+
+
+.brand{
+    position: absolute;
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    background-color: #fff;
+    height: 30vh;
+    border-radius: 20px;
+}
+
+.brand-logo{
+    width:20vh;
+    height: 30vh;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
 
 
 
@@ -121,7 +161,6 @@ main{
 }
 
 #ecommerce{
-    // color: red;
     font-weight: bold;
     background-color: red;
     color: #fff;
