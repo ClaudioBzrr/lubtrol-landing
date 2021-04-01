@@ -6,6 +6,7 @@ import {TimelineLite} from 'gsap';
 export const  Fade  =  class extends Highway.Transition{
     in({from, to, done}){
         const brand =  document.querySelector('.brand')
+        const wpp = document.querySelector('.whatsapp')
         const tl = new TimelineLite();
         tl.fromTo(to,0.5,{left:'-100%',top:'50%'},{left:'0%'})
         .fromTo(to, 0.5,{height:'1vh'}, 
@@ -14,6 +15,9 @@ export const  Fade  =  class extends Highway.Transition{
         }})
         .fromTo(to.children[0],0.4,{bottom:'-100%', opacity:0}, {bottom:'0%',opacity:1})
         .fromTo(brand,0.5,{bottom:'-100%', opacity:0}, {bottom:'auto',opacity:1})
+        .fromTo(wpp,0.3,{opacity:0}, {opacity:1})
+
+        
 
 
 
