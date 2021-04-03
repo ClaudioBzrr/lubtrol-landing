@@ -14,7 +14,7 @@ export const  Fade  =  class extends Highway.Transition{
             done();
         }})
         .fromTo(to.children[0],0.4,{bottom:'-100%', opacity:0}, {bottom:'0%',opacity:1})
-        .fromTo(brand,0.5,{bottom:'-100%', opacity:0}, {bottom:'auto',opacity:1})
+        .fromTo(brand,0.5,{bottom:'-100%', opacity:0}, {top:'0.06vh',opacity:1})
         .fromTo(wpp,0.3,{opacity:0}, {opacity:1})
 
         
