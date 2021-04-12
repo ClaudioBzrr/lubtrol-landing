@@ -135,7 +135,7 @@ main{
 .home-brand-shell-content{
 
     left: auto;
-    width: 90vw;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,11 +185,11 @@ main{
     transition: ease-in-out 1s;
 }
 [data-anime="left"]{
-    transform: translate3d(-100vw,0,0);
+    transform: translate3d(-10vh,0,0);
 }
 
 [data-anime="right"]{
-    transform: translate3d(100vw,0,0);
+    transform: translate3d(10vh,0,0);
 }
 
 [data-anime].animate{
