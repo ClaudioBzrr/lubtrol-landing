@@ -78,11 +78,7 @@ main{
 
 
 .home{
-    // background-color: rgb(70 128 194 / 90%);
-    // background-color: #722f37 ;
     background-color: #e71837;
-    // background-color: yellow;
-
 }
 
 .about{
@@ -168,18 +164,28 @@ main{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color:  #daa520 ;
+    background-color:  rgb(70 128 194 / 90%)  ;
     border-bottom: silver 1px solid;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
 
 }
 
-.faixa{
+.faixa-01{
+    padding-top: 5vh;
     width: 100%;
     display: flex;
-    height: 60vh;
+    height: 50vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    left: auto;
+}
+
+.faixa-02{
+
+    width: 100%;
+    display: flex;
+    height: 40vh;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -187,7 +193,8 @@ main{
 }
 
 
-.box-left,.box-right{
+.box{
+    transition: 0.5s ease-in-out;
     width: 50%;
     height: 100%;
     display: flex;
@@ -197,17 +204,28 @@ main{
     
 
     img{
-      width: 80%;
-      height: 50vh;
-      object-fit: contain;  
+        margin-top: 10%;
+        width: 80%;
+        height: 80%;
+        object-fit: contain;  
 
     }
 
     h2{
-        width: 80%;
-        font-size: 1.7vw;
+        width: 90%;
+        height: 5%;
+        font-size: 2vh;
+        
     }
 
+}
+
+
+
+.box:hover{
+    background-color:rgb(70 128 194 / 90%);
+    transition: 0.5s ease-in-out;
+    
 }
 
 
@@ -309,3 +327,26 @@ main{
     
 }
 
+
+// Estilização da página Contato
+
+
+
+.contact-presentantion{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.box-contact{
+    height: 40vh;
+
+}
+
+.mapa{
+    height: 30vh;
+    width: 40%;
+}

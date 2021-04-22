@@ -3,10 +3,20 @@ import {Fade} from './transition'
 
 
 
+
+
 const H = new Highway.Core({
     
     transitions:{
-        default:Fade
+        home:Fade,
+        about:Fade,
+        contact:Fade
     }
+
 });
+
+
+
+
+
 

@@ -5,18 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build1":"parcel index.html --public-url ./ --no-source-maps",
-    "build2":"parcel build index.html -d dist --no-source-maps"
+    "build1": "parcel index.html --public-url ./ --no-source-maps",
+    "build2": "parcel build index.html -d dist --no-source-maps"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dogstudio/highway": "^2.2.1",
-    "gsap": "^3.6.0",
-    "parcel-bundler": "^1.12.5"
+    "@dogstudio/highway": "^2.2.2",
+    "gsap": "^3.6.1"
   },
   "devDependencies": {
-    "sass": "^1.32.8"
+    "sass": "^1.32.11"
   }
 }
