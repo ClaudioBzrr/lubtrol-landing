@@ -14,7 +14,7 @@ export const Fade = class extends Highway.Transition {
         tl.fromTo(to, 0.5, { left: '-100%', top: '50%' }, { left: '0%' })
             .fromTo(to, 0.5, { height: '1vh' },
                 {
-                    height: '100%', top: '10%', onComplete: function () {
+                    height: '106vh', top: '10%', onComplete: function () {
                         done();
                     }
                 })

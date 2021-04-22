@@ -82,11 +82,11 @@ main{
 }
 
 .about{
-    background-color: rgb(70 128 194 / 90%);
+    background-color: #e71837;
 }
 
 .contact{
-    background-color: rgb(70 128 194 / 90%);
+    background-color: #e71837;
 }
 
 .home-content,.about-content,.contact-content{
@@ -146,9 +146,10 @@ main{
         top: 0;
     }
     p{
+        text-align: left;
+        width: 50%;
         margin-top: 10vh;
-        font-size: 2.5vh;
-        text-align: center;
+        font-size: 3vh;
     }
 
     img{
@@ -227,11 +228,6 @@ main{
     transition: 0.5s ease-in-out;
     
 }
-
-
-
-
-
 
 
 [data-anime]{
@@ -328,11 +324,13 @@ main{
 }
 
 
-// Estilização da página Contato
+//Estilização da página Contato
 
 
 
-.contact-presentantion{
+
+
+.contact-presentation{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -342,11 +340,54 @@ main{
 
 
 .box-contact{
-    height: 40vh;
+    width: 65%;
+    padding: 3vh;
+    margin-top: 5vh;
+    height: 37vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5vh;
+    border: 1px solid #fff;
+}
+
+
+.mapa{
+    border-radius: 5vh;
+    height: 80%;
+    width: 60%;
 
 }
 
-.mapa{
-    height: 30vh;
-    width: 40%;
+.h1-contact{
+    text-align: center;
+    font-size: 3vw;
+}
+
+.faixa-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-map, .icon-phone{
+    padding-right: 5px;
+    align-self: center;
+}
+
+
+//Estilização da página Sobre
+
+.about-presentation{
+    height: 100vh;
+}
+
+.box-about{
+    width: 100%;
+    height: 50vh;
+    border: 1px solid #000;
+    h2{
+        text-align: center;
+    }
 }
