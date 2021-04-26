@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel index.html --no-source-maps",
     "build1": "parcel index.html --public-url ./ --no-source-maps",
     "build2": "parcel build index.html -d dist --no-source-maps"
   },
@@ -13,9 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@dogstudio/highway": "^2.2.2",
-    "gsap": "^3.6.1",
-    "node-sass": "4.11.0",
-    "parcel-bundler": "^1.12.3"
+    "gsap": "^3.6.1"
   },
   "devDependencies": {
     "sass": "^1.32.11"
