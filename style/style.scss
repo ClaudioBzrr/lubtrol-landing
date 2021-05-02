@@ -175,7 +175,7 @@ main{
     padding-top: 5vh;
     width: 100%;
     display: flex;
-    height: 50vh;
+    height: 50%;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -186,7 +186,7 @@ main{
 
     width: 100%;
     display: flex;
-    height: 40vh;
+    height: 50%;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -196,23 +196,25 @@ main{
 
 .box{
     transition: 0.5s ease-in-out;
-    width: 50%;
-    height: 100%;
+    width: 100vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+
     
 
     img{
-        margin-top: 10%;
-        width: 80%;
-        height: 80%;
-        object-fit: contain;  
+        padding-top: 10%;
+        width: 100%;
+        height: 90%;
+        object-fit: contain;
 
     }
 
     h2{
+        text-align: center;
         width: 90%;
         height: 5%;
         font-size: 2vh;
@@ -359,6 +361,13 @@ main{
 
 
 //Estilização da página Sobre
+
+
+.stock{
+    width: 100vh;
+    height: 100%;
+    margin-top: 5%;
+}
 
 
 .about-presentation{
