@@ -1,0 +1,39 @@
+.footer-content{
+  height: 6vh;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-left: auto;  
+}
+
+li .footer-links svg {
+  width: 100%;
+}
+
+.copyright {
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.copyright::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #333;
+  top: 10px;
+  left: 0;
+  z-index: 333;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #166ae9;
+}

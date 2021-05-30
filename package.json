@@ -12,10 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dogstudio/highway": "^2.2.2",
+    "@dogstudio/highway": "^2.2.1",
     "gsap": "^3.6.1"
   },
   "devDependencies": {
-    "sass": "^1.32.12"
+    "sass": "^1.34.0"
   }
 }

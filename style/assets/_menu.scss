@@ -1,0 +1,149 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 0 50px;
+}
+
+.logo{
+  height: 9vh;
+}
+
+.nav-list{
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  list-style: none;  
+}
+
+.menu-toggler {
+  background: none;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  z-index: 999;
+  display: none;
+}
+
+.menu-toggler span {
+  display: block;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+  position: relative;
+  transition: .3s linear;
+}
+
+.nav-links{
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 2.2vh;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+li:last-child .nav-links {
+  margin-right: 0;
+}
+
+.nav-links::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color:rgb(70 128 194 / 90%);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+.nav-links:hover::before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 791px) {
+  nav {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 591px) {
+  nav {
+    padding: 0 30px;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    li {
+      margin: 15px 0;
+    }
+  }
+
+  .nav-links {
+    font-size: 1.5em;
+    margin: 30px 0;
+    color: #fff;
+  }
+
+  .menu-toggler {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .menu-toggler {
+    display: block;
+  }
+
+  .nav-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #353b48;
+    top: 0;
+    right: -100%;
+    max-width: 300px;
+    padding: 80px 50px;
+    transition: .2s linear;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  .menu-toggler.active span {
+    background-color: #fff;
+  }
+
+  .menu-toggler.active span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 4px;
+  }
+
+  .menu-toggler.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggler.active span:nth-child(3) {
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+}
