@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="A lubtrol é o Distribuidor oficial Shell no nordeste, além de distribuir também várias marcas como Michelin, ACDelco,Promax Bardahl e Levorin">
-    <link rel="stylesheet" href="./style/style.scss">
+    <link rel="stylesheet" href="./style/main.scss">
     <link rel="icon" type="image/png" href="./images/icon.png" />
     <title>Sobre</title>
 </head>
@@ -15,13 +15,18 @@
 <body>
     <nav>
         <img src="./images/logo.png" alt="logo" class="logo">
-        <ul class="nav-list">
+        <ul id="nav" class="nav-list">
             <li><a class="nav-links" href="./index.html">Início</a></li>
             <li><a class="nav-links" href="./about.html">Sobre</a></li>
             <li><a class="nav-links" href="./contact.html">Contato</a></li>
             <li><a class="nav-links" id="ecommerce" href="https://loja.lubtrol.com.br/">Loja Virtual</a></li>
 
         </ul>
+        <div id="toggle" class="menu-toggler">
+            <span class="l1"></span>
+            <span class="l2"></span>
+            <span class="l3"></span>
+        </div>
     </nav>
     <main data-router-wrapper>
         <section data-router-view="about" class="about">
