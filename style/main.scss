@@ -14,7 +14,7 @@
 
 main {
     margin-top: 10vh;
-    color: antiquewhite;    
+    color: antiquewhite; 
 }
 
 .home, .about, .contact{
@@ -23,8 +23,12 @@ main {
     width: 100%;
 }
 
-.home, .about, .contact{
+.home,.contact{
     background-color: #e71837;
+}
+.about{
+    background-color:#e71837;
+    z-index: -1;
 }
 
 .home-content, .about-content, .contact-content{
@@ -32,13 +36,25 @@ main {
     height: 100%;
     display: flex;
     justify-content: space-evenly;
+    color: white !important;
     h1{
         font-size: 2.25em;
         margin: 30px 0px;
+        z-index: 15555555;
+
     }
     p{
         font-size: 1.5em;
+
     }
+}
+
+.about-content{
+    background-image: url('/images/lubtrol-stock.PNG');
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.6;
+    // z-index: -1;
 }
 
 .whatsapp{
