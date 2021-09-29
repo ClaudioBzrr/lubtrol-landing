@@ -5,7 +5,8 @@ import { TimelineLite } from 'gsap';
 
 export const Fade = class extends Highway.Transition {
     in({ from, to, done }) {
-        const about_content = document.querySelector('.about-content') 
+        const about_content = document.querySelector('.about-content')
+        const about_presentation = document.querySelector('.about-presentation')  
         const brandshell =  document.querySelector('.home-brand-shell')
         const brand = document.querySelector('.brand')
         const products =  document.querySelector('.home-products')
@@ -29,8 +30,9 @@ export const Fade = class extends Highway.Transition {
                 })
 
 // (to.children[0]!=about_content)
-                .fromTo(verifyChild(to.children[0]), 0.4, { bottom: '-100%', opacity: 0 }, { bottom: '0%', opacity: 1 })
-                .fromTo(about_content, 0.4, { bottom: '-100%'}, { bottom: '0%'})
+            .fromTo(verifyChild(to.children[0]), 0.4, { bottom: '-100%', opacity: 0 }, { bottom: '0%', opacity: 1 })
+            .fromTo(about_content, 0.4, { bottom: '-100%',opacity:0}, { bottom: '0%',opacity:0.6})
+            .fromTo(about_presentation, 0.4, { bottom: '-100%',opacity:0}, { bottom: '0%',opacity:1})
 
             .fromTo(brand, 0.5, { bottom: '-100%', opacity: 0 }, { top: '0.06vh', opacity: 1 })
             .fromTo(mural, 0.5, { bottom: '-100%', opacity: 0 }, { top: '0.06vh', opacity: 1 })

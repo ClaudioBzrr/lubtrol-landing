@@ -5,7 +5,11 @@
 }
 
 .about-presentation{
-  margin-top: 4%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
   width: 100vw;
   height: 70vh;
   display: flex;
@@ -13,8 +17,14 @@
   align-items: center;
   justify-content: center;
 
+
+  h1{
+    font-size: 2.25em;
+    margin: 30px 0px;
+  }
   p{
       width: 80%;
+      font-size: 1.5em
   }
   
 }
