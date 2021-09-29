@@ -32,9 +32,9 @@ export const Fade = class extends Highway.Transition {
 // (to.children[0]!=about_content)
             .fromTo(verifyChild(to.children[0]), 0.4, { bottom: '-100%', opacity: 0 }, { bottom: '0%', opacity: 1 })
             .fromTo(about_content, 0.4, { bottom: '-100%',opacity:0}, { bottom: '0%',opacity:0.6})
-            .fromTo(about_presentation, 0.4, { bottom: '-100%',opacity:0}, { bottom: '0%',opacity:1})
-
+            
             .fromTo(brand, 0.5, { bottom: '-100%', opacity: 0 }, { top: '0.06vh', opacity: 1 })
+            .fromTo(about_presentation, 0.3, { bottom: '-100%',opacity:0}, { bottom: '0%',opacity:1})
             .fromTo(mural, 0.5, { bottom: '-100%', opacity: 0 }, { top: '0.06vh', opacity: 1 })
             .fromTo(brandshell, 0.5, {opacity: 0 }, {opacity: 1 })
             .fromTo(products,0.5,{opacity:0},{opacity:1})
