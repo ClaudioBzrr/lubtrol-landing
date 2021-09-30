@@ -31,7 +31,14 @@ export const Fade = class extends Highway.Transition {
 
 // (to.children[0]!=about_content)
             .fromTo(verifyChild(to.children[0]), 0.4, { bottom: '-100%', opacity: 0 }, { bottom: '0%', opacity: 1 })
-            .fromTo(about_content, 0.4, { bottom: '-100%',opacity:0}, { bottom: '0%',opacity:0.6})
+            .fromTo(about_content, 0.4, { bottom: '-100%',opacity:0}, { bottom: '0%',opacity:0.6,onComplete:function(){
+                    const data =  new Date();
+
+                    const tempo = data.getFullYear() - 1993;
+
+                    document.querySelector('.year-text').innerHTML = `Atuamos há ${tempo} anos e somos reconhecidos no mercado como Excelência em Distribuição.`
+                    
+            }})
             
             .fromTo(brand, 0.5, { bottom: '-100%', opacity: 0 }, { top: '0.06vh', opacity: 1 })
             .fromTo(about_presentation, 0.3, { bottom: '-100%',opacity:0}, { bottom: '0%',opacity:1})
