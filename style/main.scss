@@ -17,7 +17,7 @@ main {
     color: antiquewhite; 
 }
 
-.home, .about, .contact{
+.home, .about, .contact,.portfolio{
     height: 106vh;
     position: absolute;
     width: 100%;
@@ -31,7 +31,7 @@ main {
     z-index: -1;
 }
 
-.home-content, .about-content, .contact-content{
+.home-content, .about-content, .contact-content,.portfolio-content{
     position: relative;
     height: 100%;
     display: flex;
@@ -110,7 +110,7 @@ main {
 	.home-content, .about-content {
 		height: 70%;
 	}
-    .home-content, .about-content, .contact-content{
+    .home-content, .about-content, .contact-content,.portfolio-content{
 		h1 {
 			font-size: 1.25em;
 			margin: 15px 0;
