@@ -15,6 +15,7 @@ export const Fade = class extends Highway.Transition {
         const footer = document.querySelector('.footer-content')
         const mural =  document.querySelector('.mural')
         const copyright =  document.querySelector('.copyright')
+        const portfolio_content =  document.querySelector('.portfolio-content')
 
         function verifyChild(el){
             if(el != about_content){
@@ -22,12 +23,14 @@ export const Fade = class extends Highway.Transition {
             }
         }
         tl.fromTo(to, 0.5, { left: '-100%', top: '50%' }, { left: '0%' })
+            
             .fromTo(to, 0.5, { height: '1vh' },
                 {
                     height: '106vh', top: '10%', onComplete: function () {
                         done();
                     }
                 })
+            
 
 // (to.children[0]!=about_content)
             .fromTo(verifyChild(to.children[0]), 0.4, { bottom: '-100%', opacity: 0 }, { bottom: '0%', opacity: 1 })

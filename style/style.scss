@@ -70,7 +70,7 @@ main{
     transform: scaleX(1);
 }
 
-.home,.about, .contact{
+.home,.about, .contact,.portfolio{
     height: 106vh;
     position: absolute;
     width: 100%;
@@ -87,6 +87,10 @@ main{
 }
 
 .contact{
+    background-color: #e71837;
+}
+
+.portfolio{
     background-color: #e71837;
 }
 

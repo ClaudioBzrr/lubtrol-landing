@@ -4,6 +4,7 @@
 @import "./assets/footer";
 @import "./assets/contact";
 @import "./assets/about";
+@import "./assets/portfolio";
 
 *{
     margin: 0px;
@@ -17,8 +18,14 @@ main {
     color: antiquewhite; 
 }
 
-.home, .about, .contact,.portfolio{
+.home, .about, .contact{
     height: 106vh;
+    position: absolute;
+    width: 100%;
+}
+
+.portfolio{
+    // height: 106vh;
     position: absolute;
     width: 100%;
 }
@@ -26,12 +33,12 @@ main {
 .home,.contact{
     background-color: #e71837;
 }
-.about{
+.about, .portfolio{
     background-color:#e71837;
     z-index: -1;
 }
 
-.home-content, .about-content, .contact-content,.portfolio-content{
+.home-content, .about-content, .contact-content{
     position: relative;
     height: 100%;
     display: flex;
@@ -95,7 +102,7 @@ main {
 		height: 50%;
 	}
 	
-    .home-content, .about-content, .contact-content{
+    .home-content, .about-content, .contact-content, .portfolio-content{
 		h1 {
 			font-size: 1.5em;
 			margin: 15px 0;

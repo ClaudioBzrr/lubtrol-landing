@@ -1,0 +1,41 @@
+.portfolio-box{
+    width: 100%;
+    // background: #fff;
+    height: 100%;
+}
+
+.portfolio-content{
+    width: 100%;
+    // background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+
+    h1{
+        // color: #e71837;
+        text-align: center;
+        font-size: 6vh;
+        margin: 30px 0px;
+    }
+    p{
+        font-size: 3.2vh;
+    }
+
+}
+
+
+
+.portfolio-images{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.port-image{
+    width: 80%;
+}
+
+
