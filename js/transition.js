@@ -15,7 +15,7 @@ export const Fade = class extends Highway.Transition {
         const footer = document.querySelector('.footer-content')
         const mural =  document.querySelector('.mural')
         const copyright =  document.querySelector('.copyright')
-        const portfolio_content =  document.querySelector('.portfolio-content')
+
 
         function verifyChild(el){
             if(el != about_content){
@@ -38,8 +38,13 @@ export const Fade = class extends Highway.Transition {
                     const data =  new Date();
 
                     const tempo = data.getFullYear() - 1993;
+                    try{
+                        
+                        document.querySelector('.year-text').innerHTML = `Atuamos há ${tempo} anos e somos reconhecidos no mercado como Excelência em Distribuição.`
 
-                    document.querySelector('.year-text').innerHTML = `Atuamos há ${tempo} anos e somos reconhecidos no mercado como Excelência em Distribuição.`
+                    }catch{
+
+                    }
                     
             }})
             

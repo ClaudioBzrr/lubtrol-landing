@@ -22,4 +22,12 @@ const data =  new Date();
 
 const tempo = data.getFullYear() - 1993;
 
-document.querySelector('.year-text').innerHTML = `Atuamos há ${tempo} anos e somos reconhecidos no mercado como Excelência em Distribuição.`
+try{
+
+    document.querySelector('.year-text').innerHTML = `Atuamos há ${tempo} anos e somos reconhecidos no mercado como Excelência em Distribuição.`
+
+}catch{
+
+    
+
+}

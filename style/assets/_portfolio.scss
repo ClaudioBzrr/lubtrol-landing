@@ -12,7 +12,6 @@
     justify-content: space-evenly;
 
     h1{
-        // color: #e71837;
         text-align: center;
         font-size: 6vh;
         margin: 30px 0px;
@@ -38,4 +37,22 @@
     width: 80%;
 }
 
+.download-portfolio,.download-portfolio:visited,.download-portfolio:link, .download-portfolio:hover,.download-portfolio:active {
+    margin-top: 5vh;
+    width: 14vw;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #fff;
+    position:fixed;
+    right: 1vw;
+    background-color: #e71837;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 1vw;
+    padding: 1vw;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
 
+
+}
