@@ -38,8 +38,8 @@
 }
 
 .download-portfolio,.download-portfolio:visited,.download-portfolio:link, .download-portfolio:hover,.download-portfolio:active {
-    margin-top: 5vh;
-    width: 14vw;
+    margin-top: 15vh;
+    // width: 14vw;
     text-align: center;
     vertical-align: middle;
     border: 1px solid #fff;
@@ -55,4 +55,21 @@
     justify-content: space-around;
 
 
+}
+
+
+@media screen and (max-width: 791px) {
+    
+    .span-download{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 591px) {
+
+    .span-download{
+        display: none;
+    }
+    
 }
